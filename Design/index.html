@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <head>
     <title>Welcom to Urumqi No.1 Senior High School Model UN!</title>
-    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>    
+    <meta name="viewport" content=" user-scalable=no" />
     <!-- This following line needed in the case of setting the plugin option `scrollOverflow` to `true` -->
-    <script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
-
-    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-    <script src="js/base.js"></script>
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Pacifico:400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    
+    <script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+    <script src="http://www.phpboy.net/wp-content/uploads/demo/youkump4/youkump4.js"></script>
+    <script src="js/base.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
 </head>
 <body>
     <div class="section" id="section1">
@@ -21,7 +22,7 @@
         <p class="text">
             Model United Nations (also Model UN or MUN) is an academic simulation of the United Nations that aims to educate participants about current events, topics in international relations, diplomacy and the United Nations agenda.
         </p><br> 
-        <a class="button" id="su-button">Sign Up</a>
+        <a class="button" id="su-button" herf="javascript:" onClick="$.fn.fullpage.moveTo(5); ">Sign Up</a>
         <a class="button" herf="javascript:" onClick="$.fn.fullpage.moveTo(2); ">Learn More</a>
     </div>
                 
@@ -43,7 +44,7 @@
          <p class="text">
              The UMMUN is the first purely strdents driven High School Model UN group in Xinjiang!
             </p>
-        </div> 
+        </div>  
          <div class="slide fit" data-anchor="slide3"> 
              <h1>The Best.</h1>
          <p class="text">
@@ -58,6 +59,29 @@
     <div class="section">
         <h1>This video is here for you.</h1>
         <p>We made you this super-cool video to demonstrate our group.</p>
-        <video id="youku-html5-player-video" width="80%" height="40%" x-webkit-airplay="allow" controls="" autoplay="" preload="" src="http://182.140.226.73/youku/6572595C7EA45826FDF6DD419D/0300200100523B18101D77047554ADA75B234B-9351-A274-866F-8310D6AD39B2.mp4"> </video>
+        <video id="youkuvideo" width="80%" height="40%" x-webkit-airplay="allow" controls=""  preload="" >
+        </video>
+    </div>
+    <div class="section">
+        <h1>Join Us!</h1>
+        <form action="//api.formspree.com/ummun.tk@gmail.com" method="post">
+            <input class="fancy_input" type="text" name="name" placeholder="Real Name"><br>
+            <input class="fancy_input" type="email" name="email" placeholder="Email"><br>
+            <input class="fancy_input" type="email" name="year_of_graduation" placeholder="Year of Graduation"><br>
+            <input class="fancy_input" type="email" name="class" placeholder="Class"><br>
+            <input class="fancy_input" type="email" name="qq" placeholder="QQ"><br>
+            <input class="fancy_input" type="email" name="phone" placeholder="Phone Number"><br>
+            <input class="button" type="submit" value="Send">
+        </form>
+    </div>
+    <div class="section">
+        <h1>Creators</h1>
+        <p>UMMUN was created by the following persons with ❤:</p>
+        <p>Sherbet Mei @ Class 12, 2015</p>
+        <p>Iris Lyu @ Class 13, 2015</p>
+        <p>Andy Fang @ Class 13, 2015</p>
+        <p>Kevin Mu @ Class 10, 2014</p>
+        <p>Next: You.</p>
+        <p class="pull">Copyright &copy; 2013 - 2014, UMMUN. Front page designed by Andy Fang. </p>
     </div>
 </body>
